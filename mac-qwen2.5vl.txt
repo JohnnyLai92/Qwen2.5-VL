@@ -1,0 +1,10 @@
+git clone https://github.com/QwenLM/Qwen2.5-VL
+cd Qwen2.5-VL
+pip install -r requirements_web_demo.txt
+pip install torch torchvision torchaudio
+pip install -U gradio gradio_client
+python web_demo_mm.py --checkpoint-path "Qwen/Qwen2.5-VL-3B-Instruct"
+or 
+python web_demo_mm.py --checkpoint-path "Qwen/Qwen2.5-VL-7B-Instruct"
+or 
+python web_demo_mm.py --checkpoint-path "Qwen/Qwen2.5-VL-72B-Instruct"
